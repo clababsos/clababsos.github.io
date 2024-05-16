@@ -14,7 +14,7 @@
         }
         .banner {
             position: relative;
-            background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b6b37973-4ac2-415f-b90d-b4a1677c15e8/deg2ghi-0721cf9d-ee74-43fd-b911-48040b0cf612.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I2YjM3OTczLTRhYzItNDE1Zi1iOTBkLWI0YTE2NzdjMTVlOFwvZGVnMmdoaS0wNzIxY2Y5ZC1lZTc0LTQzZmQtYjkxMS00ODA0MGIwY2Y2MTIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.srY_AwwONwVQnf24VInpa86STAoTW4y8ODEVS5F7XlQ'); /* Add your banner image URL here */
+            background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b6b37973-4ac2-415f-b90d-b4a1677c15e8/deg2ghi-0721cf9d-ee74-43fd-b911-48040b0cf612.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I2YjM3OTczLTRhYzItNDE1Zi1iOTBkLWI0YTE2NzdjMTVlOFwvZGVnMmdoaS0wNzIxY2Y5ZC1lZTc0LTQzZmQtYjkxMS00ODA0MGIwY2Y2MTIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.srY_AwwONwVQnf24VInpa86STAoTW4y8ODEVS5F7XlQ');
             background-size: cover;
             background-position: center;
             border-radius: 20px;
@@ -23,36 +23,49 @@
         }
         h1 {
             position: absolute;
-            left: 160px;
+            left: 219px;
             bottom: 10px;
             font-size: 4em;
             margin: 0;
             color: white;
+            text-shadow: 5px 1px 9px black;
         }
         ul {
             list-style-type: none;
-            padding: 5px;
+            padding: 10px;
             text-align: left;
-            margin-left: 160px; /* Indent links slightly to the right */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 55vh;
+            margin: 0;
         }
         li {
-            margin: 1.7em 0;
-          
+            margin: 0;
         }
         a {
-            display: inline-block;
-            padding: 10px 20px;
-            border-radius: 12px;
-            background-color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 60px; /* Larger padding for bigger bubbles */
+            width: 60px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #6989ce; /* Button color */
             text-decoration: none;
-            color: #403c4c;
-            box-shadow: 13px 9px 5px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); 
-        
+            color: white; /* Button text color */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+            text-align: center;
+            font-size: 1.5em;
         }
         a:hover {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
+            box-shadow: 0px 15px 5px rgba(0, 0, 0, 0.2),
+                        0 0 30px #393b4f, /* Enhanced glow on hover */
+                        0 0 40px #3f5069,
+                        0 0 50px #6370a2,
+                        0 0 80px #7898e0;
+                }
     </style>
 </head>
 <body>
@@ -60,9 +73,10 @@
         <h1>clababsos</h1>
     </div>
     <ul>
-        <li><a href="https://x.com/Clababsos" target="_blank">twitter / X</a></li>
-        <li><a href="https://www.youtube.com/channel/UCT8o5krNRA2OzLvVjD9lu2Q" target="_blank">youtube</a></li>
-        <li><a href="https://discord.com/invite/MEvGsG6BDk" target="_blank">discord</a></li>
+        <li><a href="https://x.com/Clababsos" target="_blank" class="button">twitter</a></li>
+        <li><a href="https://www.youtube.com/channel/UCT8o5krNRA2OzLvVjD9lu2Q" target="_blank" class="button">youtube</a></li>
+        <li><a href="https://discord.com/invite/MEvGsG6BDk" target="_blank" class="button">discord</a></li>
     </ul>
+  
 </body>
 </html>
